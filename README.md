@@ -7,7 +7,7 @@
 <p>这个插件基于<a style="cursor:pointer"  href="https://www.mxnzp.com/">RollToolsApi</a></p>
 <p>在使用前请先在微信搜索小程序“Roll地盘”获取api.id和api.key。</p>
 
-{% blockquote %}
+blockquote
 
 <b>想体验接口？ </b>
 可获取临时app_id测试，获取方式：扫描下方小程序码->选择TAB-我的->点击获取临时app_id即可获取临时体验接口的app_id和app_secret，此app_id仅为测试使用，次日凌晨自动重置，重置之后之前生成的app_id将失效，真正使用接口请申请属于自己专属的app_id。
@@ -18,9 +18,9 @@
 <b>捐助api？</b>
 由于服务器端的维护以及部分接口的维护都是需要付费的，所以如果此项目对您有帮助，还希望您捐赠支持，让我能好好的一直坚持下去。金额不在于多少，一份心意就好！在此感谢捐赠列表中所有的捐赠者，你们的鼓励是我最大的动力！
 
-![example](/images/juanzhu.png)
+![example](https://zfe.space/images/juanzhu.png)
 
- {% endblockquote %}
+endblockquote
 
 <p>本侧边栏部件通过vuejs进行编码。</p>
 <p>资源包地址：https://github.com/Zfour/Butterfly-news</p>
