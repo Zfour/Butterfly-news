@@ -1,0 +1,21 @@
+.card-widget.card-recent-post
+  #gamenews
+    .card-content
+      .item-headline
+        i.fas.fa-cube
+        span ROLL资讯
+        i.fas.fa-retweet(@click='changetype(current)' style="float:right;margin-top:8px")
+      .newsbar
+        span(v-for="(type, index) in listtype" v-on:click="addClass(index)" v-bind:class="{ listtypeon:index==current}") {{type}}
+      .aside-list
+        .aside-list-item(v-for='(news,index) in newsvue')
+          a.thumbnail(href='javascript:void(0)', @click='getnewsdata(index)' :title='news.title')
+            img.loaded(onerror='this.onerror=null;this.src=\'/img/404.jpg\'', data-ll-status='loaded', :src='news.imgList[0]')
+          .content
+            a.title(href='javascript:void(0)', @click='getnewsdata(index)' :title='news.title') {{news.title}}
+            time {{news.postTime}}
+    #newsmodal
+      button.modalclose(@click='hidemodle()') 关闭
+      h2 {{newpostvue.title}} 
+      h4 {{newpostvue.ptime}} &nbsp;&nbsp; {{newpostvue.source}}
+      div(v-html="newpostvue.content")
