@@ -1,6 +1,6 @@
 #newsmodal {
 	  display:none;
-      background-color: #fff;
+      background-color: var(--global-bg);
       position: fixed;
       width: 60%;
       height: auto;
@@ -18,7 +18,7 @@
 	  overflow:auto
     }
 .modalclose{
-	
+	color:var(--font-color);
 	margin-right:30px;
 	right:20%;
 	font-size:1em;
@@ -65,6 +65,7 @@
     top: 30%;
 left: 0%;}
 .modalclose {
+	color:var(--font-color);
     margin-right: 0;
     right: 40%;
     font-size: 1em;
